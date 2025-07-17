@@ -320,7 +320,7 @@ section img {
         background-color: var(--medium-gray);
         color: var(--dark-blue);
         border-radius: 30px;
-        padding: 10px 15px;
+        padding: 10px 20px;
     }
 
     .icone-lua-desktop {

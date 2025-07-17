@@ -57,6 +57,8 @@
     --medium-gray: #D9D9D9;
     --dark-blue: #144774;
     --medium-blue: #336FA5;
+    --bc-blue: #4E8BB8;
+    --bn-blue: #6FADD2;
     --light-blue :#9ECAE3;
 }
 body {
@@ -166,6 +168,83 @@ body.dark-mode .menu-hamburguer {
     display: none;
 }
 
+section {
+    display: flex;
+    gap: 35px;
+    padding: 38px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.fundo-azul {
+    background-color: var(--dark-blue);
+    border-radius: 25px;
+    width: 300px;
+    height: 142px;
+    text-align: center;
+    color: var(--white);
+}
+
+body.dark-mode .fundo-azul {
+    background-color: var(--medium-blue);
+}
+
+.img-sobrenos1,
+.img-sobrenos2,
+.img-sobrenos3,
+.img-sobrenos4 {
+    width: 180px;
+    height: 180px;
+    background-image: url('./imagens/img-sobrenos.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.img-sobrenos1,
+.img-sobrenos2,
+.img-sobrenos3,
+.img-sobrenos4 {
+        transform: translate(-30px, 20px);
+    }
+
+    h2 {
+    font-family: 'Mada-SemiBold';
+    font-size: 22px;
+    margin-top: -140px;
+    margin-bottom: 45px;
+    transform: translate(35px, -5px);
+    }
+
+    section > div > a {
+        background-color: var(--bc-blue);
+        padding: 8px 25px;
+        color: var(--white);
+        border-radius: 30px;
+        font-size: 18px;
+        font-family: 'MadimiOne';
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        top: -40px;
+        left: 35px;
+
+    }
+
+    section > div > a:hover {
+        background-color: var(--white);
+        color: var(--dark-blue);
+    }
+
+    body.dark-mode section > div > a {
+        background-color: var(--bn-blue);
+    }
+
+    body.dark-mode section > div > a:hover {
+        background-color: var(--white);
+        color: var(--medium-blue);
+    }
+
 @media(min-width: 1024px) {
     body {
         margin: 0;
@@ -245,7 +324,7 @@ body.dark-mode .menu-hamburguer {
         background-color: var(--medium-gray);
         color: var(--dark-blue);
         border-radius: 30px;
-        padding: 10px 15px;
+        padding: 10px 20px;
     }
 
     .icone-lua-desktop {
@@ -260,6 +339,83 @@ body.dark-mode .menu-hamburguer {
     .icone-perfil {
         max-width: 120px;
         transform: translate(1255px, -132px);
-    }  
+    }
+
+    section {
+        display: flex;
+        gap: 35px;
+        padding: 140px 0;
+        justify-content: center;
+    }
+
+    .fundo-azul {
+        background-color: var(--dark-blue);
+        border-radius: 50px;
+        width: 300px;
+        height: 500px;
+        text-align: center;
+        color: var(--white);
+    }
+
+    body.dark-mode .fundo-azul {
+        background-color: var(--medium-blue);
+    }
+
+    .img-sobrenos1,
+    .img-sobrenos2,
+    .img-sobrenos3,
+    .img-sobrenos4 {
+        width: 450px;
+        height: 450px;
+        background-image: url('./imagens/img-sobrenos.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .img-sobrenos1,
+    .img-sobrenos2,
+    .img-sobrenos3,
+    .img-sobrenos4 {
+        transform: translate(-75px, 20px);
+    }
+
+    h2 {
+        font-family: 'Mada-SemiBold';
+        font-size: 35px;
+        margin-top: -140px;
+        margin-bottom: 45px;
+        text-align: center;
+        transform: none;
+    }
+
+    section > div > a {
+        background-color: var(--bc-blue);
+        padding: 15px 45px;
+        color: var(--white);
+        border-radius: 30px;
+        font-size: 24px;
+        font-family: 'MadimiOne';
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        top: unset;
+        left:unset;
+        transform: none; 
+    }
+
+    section > div > a:hover {
+        background-color: var(--white);
+        color: var(--dark-blue);
+    }
+
+    body.dark-mode section > div > a {
+        background-color: var(--bn-blue);
+    }
+
+    body.dark-mode section > div > a:hover {
+        background-color: var(--white);
+        color: var(--medium-blue);
+    }
 
 }
