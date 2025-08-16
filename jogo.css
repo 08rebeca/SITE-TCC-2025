@@ -55,11 +55,8 @@
 :root {
     --white: #F5F5F5;
     --medium-gray: #D9D9D9;
-    --dark-gray: #7F7979;
     --dark-blue: #144774;
     --medium-blue: #336FA5;
-    --bc-blue: #4E8BB8;
-    --bn-blue: #6FADD2;
     --light-blue :#9ECAE3;
 }
 body {
@@ -177,90 +174,99 @@ body.dark-mode .menu-hamburguer {
     margin: 30px 0px;
 }
 
-body.dark-mode .h1-mobile {
+body.dark-mode h1 {
     color: var(--medium-gray);
-}
-
-.h1-mobile {
-    display: block;
 }
 
 .h1-desktop {
     display: none;
 }
 
-p  {
-    font-size: 12px;
-    font-family: Mada-Medium;
-    color: var(--dark-gray);
-    text-align: center;
-    margin-top: 5px;
+.h1-mobile {
+    display: block;
 }
 
-body.dark-mode p {
-    color: var(--medium-gray);
-}
-
-.card-referencias {
+.card-jogo-mobile {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 35px 20px;
+    padding: 50px 20px;
 }
 
-.card {
-    background-color: var(--dark-blue);
-    border-radius: 25px;
-    width: 300px;
-    min-height: 120px;
-    padding: 18px;
+.card-mobile {
+    display: flex;
+    background-color: var(--medium-gray);
+    border: 1px solid var(--dark-blue);
+    border-radius: 30px;
+    padding: 30px;
+    color: var(--dark-blue);
+    max-width: 300px;
+    height: 680px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.card-texto-mobile {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-top: 200px;
+}
+
+.video-mobile {
+    width: 240px;
+    border-radius: 25px;
+    border: 1px solid var(--dark-blue);
+}
+
+.card-mobile h2 {
+    font-family: MadimiOne;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: -220px;
+}
+
+.card-mobile p {
+    font-family: Mada-Regular;
+    font-size: 18px;
     text-align: justify;
+    text-justify: auto;
+    width: 240px;
 }
 
-body.dark-mode .card {
-    background-color: var(--medium-blue);
-}
-
-.card h3 {
-    font-family: 'Mada-SemiBold';
-    font-size: 11px;
-    margin: 8px;
-    line-height: 1.25;
-}
-
-.b-acessar {
+.b-jogar-mobile {
     display: inline-block;
-    top: 25px;
-    padding: 4px 22px;
-    background-color: var(--bc-blue);
+    padding: 10px 50px;
+    background-color: var(--dark-blue);
     color: var(--white);
     font-family: 'MadimiOne';
-    font-size: 14px;
+    font-size: 24px;
     text-decoration: none;
-    cursor: pointer;
-    border-radius: 30px;
+    border-radius: 40px;
     text-align: center;
     align-self: center;
+    
     transition: 0.3s;
-    }
-
-body.dark-mode .b-acessar{
-    background-color: var(--bn-blue);
 }
-.b-acessar:hover {
+
+.b-jogar-mobile:hover {
     background-color: var(--white);
     color: var(--dark-blue);
+    border: 1px solid var(--medium-blue);
 }
 
-body.dark-mode .b-acessar:hover {
-    background-color: var(--white);
-    color: var(--medium-blue)
+.card-jogo-mobile {
+    display: block;
 }
+
+.card-jogo-desktop{
+    display: none;
+}
+
 
 @media(min-width: 1024px) {
     body {
@@ -366,10 +372,6 @@ body.dark-mode .b-acessar:hover {
         margin: 110px 0px;
     }
 
-    body.dark-mode .h1-desktop {
-        color: var(--medium-gray);
-    }
-
     .h1-mobile {
         display: none;
     }
@@ -378,77 +380,96 @@ body.dark-mode .b-acessar:hover {
         display: block;
     }
 
-    p  {
-        font-size: 22px;
-        font-family: Mada-Medium;
-        color: var(--dark-gray);
-        text-align: center;
-        margin-top: -75px;
-    }
-
-    body.dark-mode p {
-        color: var(--medium-gray);
-    }
-
-    .card-referencias {
+    .card-jogo-desktop {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        gap: 40px;
-        padding: 60px 20px;
+        align-items: center;
+        padding: 130px 40px;
     }
 
-    .card {
-        background-color: var(--dark-blue);
-        border-radius: 30px;
-        width: 585px;
-        min-height: 210px;
-        padding: 22px;
+    .card-desktop {
+        display: flex;
+        background-color: var(--medium-gray);
+        border: 1px solid var(--dark-blue);
+        border-radius: 40px;
+        padding: 70px;
+        color: var(--dark-blue);
+        font-size: 28px;
+        max-width: 1354px;
+        height: 680px;
+        width: 100%;
+        gap: 80px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-texto-desktop {
+        flex: 1;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        color: var(--white);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .card-video-desktop {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video-desktop {
+        width: 550px;
+        border-radius: 40px;
+        margin-top: -50px;
+    }
+
+
+    .card-desktop h2 {
+        font-family: MadimiOne;
+        font-size: 42px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .card-desktop p {
+        font-family: Mada-Regular;
+        font-size: 28px;
+        margin-bottom: 10px;
         text-align: justify;
+        text-justify: inter-word;
     }
 
-    body.dark-mode .card {
-        background-color: var(--medium-blue);
-    }
-
-    .card h3 {
-        font-family: 'Mada-SemiBold';
-        font-size: 20px;
-        margin: 20px;
-        line-height: 1.4;
-    }
-
-    .b-acessar {
+    .b-jogar-desktop {
         display: inline-block;
-        margin-top: -80px;
-        padding: 8px 35px;
-        background-color: var(--bc-blue);
+        padding: 20px 90px;
+        background-color: var(--dark-blue);
         color: var(--white);
         font-family: 'MadimiOne';
-        font-size: 20px;
+        font-size: 36px;
         text-decoration: none;
-        border-radius: 25px;
+        border-radius: 40px;
         text-align: center;
         align-self: center;
         transition: 0.3s;
-        }
-    
-    body.dark-mode .b-acessar{
-        background-color: var(--bn-blue);
-    }
-    
-    .b-acessar:hover {
-        background-color: var(--white);
-        color: var(--dark-blue);
+        margin-bottom: -60px;
     }
 
-    body.dark-mode .b-acessar:hover {
+    .b-jogar-desktop:hover {
         background-color: var(--white);
-        color: var(--medium-blue)
+        color: var(--dark-blue);
+        border: 1px solid var(--medium-blue);
     }
-   
+
+    .card-jogo-mobile {
+        display: none;
+    }
+
+    .card-jogo-desktop {
+        display: block;
+        
+    }
+
 }
