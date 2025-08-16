@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="jogo.css">
-    <script src="jogo.js" defer></script>
+    <link rel="stylesheet" href="faleconosco.css">
+    <script src="faleconosco.js" defer></script>
     <title>INSTRUÇÕES</title>
 </head>
 <body>
@@ -62,28 +62,14 @@
             </a>
         </header>
 
-        <div class="card-jogo-mobile">
-            <div class="card-mobile">
-                <div class="card-texto-mobile">
-                    <h2>TICK TOK: TIME IS PASSING</h2>
-                    <p>Um jogo divertido que coloca você no papel de um estudante enfrentando a procrastinação. Colete reloginhos para ganhar tempo, responda perguntas desafiadoras feitas por professores e use anjos do conhecimento com sabedoria. Mas atenção: errar pode custar uma fase — ou até mesmo o jogo inteiro!</p>
-                    <img src="./imagens/img-bloco4.jpg" alt="Vídeo" class="video-mobile">
-                    <a class="b-jogar-mobile" href="#">JOGAR</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card-jogo-desktop">
-            <div class="card-desktop">
-                <div class="card-texto-desktop">
-                    <h2>TICK TOK: TIME IS PASSING</h2>
-                    <p>Um jogo divertido que coloca você no papel de um estudante enfrentando a procrastinação. Colete reloginhos para ganhar tempo, responda perguntas desafiadoras feitas por professores e use anjos do conhecimento com sabedoria. Mas atenção: errar pode custar uma fase — ou até mesmo o jogo inteiro!</p>
-                    <a class="b-jogar-desktop" href="#">JOGAR</a>
-                </div>
-                <div class="card-video-desktop">
-                    <img src="./imagens/img-bloco4.jpg" alt="Vídeo" class="video-desktop">
-                </div>
-            </div>
+        <div class="container">
+            <form class="formulario">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Assunto" required>
+                <textarea placeholder="Descrição"></textarea>
+                <button class="b-enviar" type="submit">ENVIAR</button>
+              </form>
         </div>
     </div>
 </body>
