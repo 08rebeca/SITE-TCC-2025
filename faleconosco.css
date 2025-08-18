@@ -169,26 +169,6 @@ body.dark-mode .menu-hamburguer {
     display: none;
 }
 
-.h1-mobile {
-    font-family: MadimiOne;
-    font-size: 20px;
-    color: var(--dark-blue);
-    text-align: center;
-    margin: 30px 0px;
-}
-
-body.dark-mode h1 {
-    color: var(--medium-gray);
-}
-
-.h1-desktop {
-    display: none;
-}
-
-.h1-mobile {
-    display: block;
-}
-
 .container {
     display: flex;
     justify-content: center;
@@ -289,7 +269,7 @@ body.dark-mode .formulario {
     .logo-desktop {
         width: 240px;
         display: flex;
-        transform: translate(25px, -3px);
+        transform: translate(30px, -3px);
     }
 
     .header-desktop {
@@ -306,7 +286,7 @@ body.dark-mode .formulario {
         align-items: center;
         gap: 4.5rem;
         margin-top: -90px;
-        margin-left: 265px;
+        margin-left: 270px;
     }
 
     .header-desktop nav ul {
@@ -324,7 +304,7 @@ body.dark-mode .formulario {
     .header-desktop nav a {
         color: var(--white);
         text-decoration: none;
-        font-size: 20px;
+        font-size: 22px;
         font-family: 'Mada-SemiBold';
         padding: 10px 15px;
         display: block;
@@ -340,7 +320,7 @@ body.dark-mode .formulario {
 
     .icone-lua-desktop {
         max-width: 120px;
-        transform: translate(1180px, -60px);
+        transform: translate(1250px, -60px);
     }
 
     body.dark-mode .icone-lua-desktop {
@@ -350,22 +330,6 @@ body.dark-mode .formulario {
     .icone-perfil {
         max-width: 120px;
         transform: translate(1255px, -132px);
-    }
-
-    .h1-desktop {
-        font-family: MadimiOne;
-        font-size: 45px;
-        color: var(--dark-blue);
-        text-align: center;
-        margin: 110px 0px;
-    }
-
-    .h1-mobile {
-        display: none;
-    }
-
-    .h1-desktop {
-        display: block;
     }
 
     .container {
@@ -416,7 +380,7 @@ body.dark-mode .formulario {
         cursor: pointer;
         transition: 0.3s;
         margin: 0 auto;
-        margin-top: 10px;
+        margin-top: 20px;
       }
 
     .formulario .b-enviar:hover {
@@ -433,6 +397,5 @@ body.dark-mode .formulario {
         background-color: var(--white);
         color: var(--bc-blue);
     }
-
-    
+   
 }

@@ -58,7 +58,10 @@
     --dark-blue: #144774;
     --medium-blue: #336FA5;
     --light-blue :#9ECAE3;
+    --bn-blue: #6FADD2;
+    --bc-blue: #4E8BB8; 
 }
+
 body {
     padding: 30px 10px;
     background-color: var(--white);
@@ -166,7 +169,7 @@ body.dark-mode .menu-hamburguer {
     display: none;
 }
 
-.h1-mobile {
+h1 {
     font-family: MadimiOne;
     font-size: 20px;
     color: var(--dark-blue);
@@ -178,76 +181,59 @@ body.dark-mode h1 {
     color: var(--medium-gray);
 }
 
-.h1-desktop {
-    display: none;
-}
-
 .h1-mobile {
     display: block;
 }
 
-h2 {
-    font-family: Mada-SemiBold;
-    font-size: 18px;
-    color: var(--medium-blue);
-    text-align: center;
-    margin-bottom: 14px;
+.h1-desktop {
+    display: none;
 }
 
-body.dark-mode h2 {
-    color: var(--light-blue);
+.card-produto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 20px;
+}
+
+.card {
+    background-color: var(--medium-gray);
+    border-radius: 25px;
+    border: 1px solid var(--dark-blue);
+    width: 300px;
+    height: 220px;
+    padding: 30px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Mada-Light';
+    font-size: 18px;
 }
 
 h3 {
-    font-family: Mada-Light;
+    font-family: 'Mada-SemiBold';
     font-size: 20px;
+}
+
+h2,
+h3 {
     color: var(--dark-blue);
     text-align: center;
-    margin-bottom: 12px;
 }
 
-body.dark-mode h3 {
-    color: var(--white);
+.card img {
+    width: 230px;
+    height: auto;
+    margin-top: -20px;
 }
-
-strong {
-    font-family: Mada-Bold;
-}
-
-p   {
-    font-family: Mada-Medium;
-    font-size: 18px;
-    color: var(--dark-blue);
-}
-
-body.dark-mode p {
-    color: var(--white);
-}
-
-section img {
-    width: 300px;
-    border-radius: 30px;
-    display: block;
-    margin: 0 auto;
-}
-
-.bloco {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin: 40px auto;
-    padding: 0 16px;
-    text-align: justify;
-  }
-
-  .bloco.invertido {
-    flex-direction: column;
-  }
-
-  .bloco.invertido h2,
-  .bloco.invertido h3 {
-    text-align: center;
-  }
 
 @media(min-width: 1024px) {
     body {
@@ -348,90 +334,61 @@ section img {
         margin: 110px 0px;
     }
 
+    body.dark-mode .h1-desktop {
+        color: var(--medium-gray);
+    }
+
     .h1-mobile {
         display: none;
     }
-
+    
     .h1-desktop {
         display: block;
     }
 
-    body.dark-mode h1 {
-        color: var(--medium-gray);
+    .card-produto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+        padding: 10px 20px;
     }
 
-    .texto {
-        flex: 1;
+    .card {
+        background-color: var(--medium-gray);
+        border-radius: 25px;
+        border: 1px solid var(--dark-blue);
+        width: 400px;
+        height: 350px;
+        padding: 30px;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--white);
+        text-align: center;
     }
 
     h2 {
-        font-family: Mada-SemiBold;
-        font-size: 25px;
-        color: var(--medium-blue);
-        margin-bottom: 14px;
-    }
-
-    body.dark-mode h2 {
-        color: var(--light-blue);
-    }
-
-    strong {
-        font-family: Mada-Bold;
+        font-family: 'Mada-Light';
+        font-size: 26px;
     }
 
     h3 {
-        font-family: Mada-Light;
-        font-size: 35px;
+        font-family: 'Mada-SemiBold';
+        font-size: 30px;
+    }
+
+    h2,
+    h3 {
         color: var(--dark-blue);
-        margin-bottom: 14px;
+        text-align: center;
     }
 
-    body.dark-mode h3 {
-        color: var(--white);
+    .card img {
+        width: 330px;
+        height: auto;
+        margin-top: -10px;
     }
-
-    p   {
-        font-family: Mada-Medium;
-        font-size: 25px;
-        color: var(--dark-blue);
-    }
-
-    body.dark-mode p {
-        color: var(--white);
-    }
-
-    section img {
-        width: 500px;
-        border-radius: 50px;
-    }
-
-    .video {
-        margin-bottom: 90px;
-    }
-
-    .bloco {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 50px;
-        margin: 100px auto;
-        max-width: 1280px;
-        padding: 0 20px;
-        text-align: justify;
-      }
-
-      .bloco h2,
-      .bloco h3 {
-        text-align: left;
-      }
-
-      .bloco.invertido {
-        flex-direction: row-reverse;
-      }
-
-      .bloco.invertido h2,
-      .bloco.invertido h3 {
-        text-align: right;
-      }
 }

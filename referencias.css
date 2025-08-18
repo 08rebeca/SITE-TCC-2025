@@ -205,15 +205,15 @@ body.dark-mode p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    padding: 35px 20px;
+    gap: 15px;
+    padding: 30px 20px;
 }
 
 .card {
     background-color: var(--dark-blue);
     border-radius: 25px;
     width: 300px;
-    min-height: 120px;
+    height: 130px;
     padding: 18px;
     display: flex;
     flex-direction: column;
@@ -228,14 +228,14 @@ body.dark-mode .card {
 
 .card h3 {
     font-family: 'Mada-SemiBold';
-    font-size: 11px;
-    margin: 8px;
-    line-height: 1.25;
+    font-size: 12px;
+    margin: 6px;
+    line-height: 1.2;
 }
 
 .b-acessar {
     display: inline-block;
-    top: 25px;
+    top: 20px;
     padding: 4px 22px;
     background-color: var(--bc-blue);
     color: var(--white);
@@ -295,7 +295,7 @@ body.dark-mode .b-acessar:hover {
     .logo-desktop {
         width: 240px;
         display: flex;
-        transform: translate(25px, -3px);
+        transform: translate(30px, -3px);
     }
 
     .header-desktop {
@@ -312,7 +312,7 @@ body.dark-mode .b-acessar:hover {
         align-items: center;
         gap: 4.5rem;
         margin-top: -90px;
-        margin-left: 265px;
+        margin-left: 270px;
     }
 
     .header-desktop nav ul {
@@ -330,7 +330,7 @@ body.dark-mode .b-acessar:hover {
     .header-desktop nav a {
         color: var(--white);
         text-decoration: none;
-        font-size: 20px;
+        font-size: 22px;
         font-family: 'Mada-SemiBold';
         padding: 10px 15px;
         display: block;
@@ -346,16 +346,11 @@ body.dark-mode .b-acessar:hover {
 
     .icone-lua-desktop {
         max-width: 120px;
-        transform: translate(1180px, -60px);
+        transform: translate(1250px, -60px);
     }
 
     body.dark-mode .icone-lua-desktop {
         content: url('./imagens/icone-sol.png');
-    }
-
-    .icone-perfil {
-        max-width: 120px;
-        transform: translate(1255px, -132px);
     }
 
     .h1-desktop {

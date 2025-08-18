@@ -170,7 +170,7 @@ body.dark-mode .menu-hamburguer {
 
 section {
     display: flex;
-    gap: 35px;
+    gap: 15px;
     padding: 38px 0;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -228,7 +228,6 @@ body.dark-mode .fundo-azul {
         position: relative;
         top: -40px;
         left: 35px;
-
     }
 
     section > div > a:hover {
@@ -278,7 +277,7 @@ body.dark-mode .fundo-azul {
     .logo-desktop {
         width: 240px;
         display: flex;
-        transform: translate(25px, -3px);
+        transform: translate(30px, -3px);
     }
 
     .header-desktop {
@@ -295,7 +294,7 @@ body.dark-mode .fundo-azul {
         align-items: center;
         gap: 4.5rem;
         margin-top: -90px;
-        margin-left: 265px;
+        margin-left: 270px;
     }
 
     .header-desktop nav ul {
@@ -313,7 +312,7 @@ body.dark-mode .fundo-azul {
     .header-desktop nav a {
         color: var(--white);
         text-decoration: none;
-        font-size: 20px;
+        font-size: 22px;
         font-family: 'Mada-SemiBold';
         padding: 10px 15px;
         display: block;
@@ -329,16 +328,11 @@ body.dark-mode .fundo-azul {
 
     .icone-lua-desktop {
         max-width: 120px;
-        transform: translate(1180px, -60px);
+        transform: translate(1250px, -60px);
     }
 
     body.dark-mode .icone-lua-desktop {
         content: url('./imagens/icone-sol.png');
-    }
-
-    .icone-perfil {
-        max-width: 120px;
-        transform: translate(1255px, -132px);
     }
 
     section {
