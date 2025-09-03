@@ -350,7 +350,7 @@ h3 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 60px;
+        gap: 50px;
         padding: 10px 20px;
     }
 
